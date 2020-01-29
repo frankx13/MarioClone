@@ -18,14 +18,14 @@ public class Hud implements Disposable {
     private Viewport viewport;
     private Integer worldTimer;
     private float timeCount;
-    private Integer score;
+    private static Integer score;
 
-    Label countDownLabel;
-    Label scoreLabel;
-    Label timeLabel;
-    Label levelLabel;
-    Label worldLabel;
-    Label marioLabel;
+    private Label countDownLabel;
+    private static Label scoreLabel;
+    private Label timeLabel;
+    private Label levelLabel;
+    private Label worldLabel;
+    private Label marioLabel;
 
     public Hud(SpriteBatch sb){
         worldTimer = 300;
@@ -49,12 +49,26 @@ public class Hud implements Disposable {
         table.add(marioLabel).expandX().padTop(10); // is match parent, if more than one elements has it, it will give them an equal weight to fit the screen
         table.add(worldLabel).expandX().padTop(10);
         table.add(timeLabel).expandX().padTop(10);
-        table.row(); // create a new row
+        table.row(); // create a second row
         table.add(scoreLabel).expandX();
         table.add(levelLabel).expandX();
         table.add(countDownLabel).expandX();
 
         stage.addActor(table); // add table to the stage
+    }
+
+    public void update(float deltaTime){
+        timeCount += deltaTime;
+        if (timeCount >= 1){
+            worldTimer--;
+            countDownLabel.setText(String.format("%03d", worldTimer));
+            timeCount = 0;
+        }
+    }
+
+    public static void addScore(int value){
+        score += value;
+        scoreLabel.setText(String.format("%06d", score));
     }
 
     @Override

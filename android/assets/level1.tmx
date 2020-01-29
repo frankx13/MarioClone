@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="240" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="72">
+<map version="1.2" tiledversion="1.3.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="240" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="110">
  <tileset firstgid="1" source="NES - Super Mario Bros - Tileset.tsx"/>
  <layer id="1" name="background" width="240" height="13">
   <data encoding="base64" compression="zlib">
@@ -11,11 +11,36 @@
    eAHtWEtu1EAQNcMKSEDAKtssAwlSECBxBdgBt4Bd+B2EcBPgJgk3Cax4Jc0TL6Vqu2237ZlRt6bU1d1V9V6Xq8aaaZo6agZqBmoG/mfgYtU0l5DfkG0b38D5HPJ9IHf6j4kxJGfEHcpbMRlrG+9QivvBDc3Idut9+/EKtf8H8ndgDxCvxHcAn2duXf8A55+QXwF3xrK6TtU2/VMxpqoE4ka8iZnD32wZq8QdiJmTf+Km7sBY5zPk/+W6f4mZw5953rT5Cvka0496nwvEuhSJ3tHEK4HZVRPKrUtnLKtrk1SddcVZ6nwJ/sQskSvGmiP/7F9iluC/1HMfinsQOGpvlujPAGLWLbRx0yZKRu2i3Khtm97XV3F9XDuzeCam7/o4xAVNugb7t8uuntcM1AzMkwH2bu3fefJdUWoGSmVAe7f2b6ms1jg1A9NnwPfu0P7dA1XK9KznQ/C/x1aA5u8pzlOwuYX/CG9n/M+fa5fLUe+X6+PtLEY0Uvua45Su8VJx1Ia62bbZH9IQs+qyHapmq/aqhw7B5gp7JkPryDAjCaCubUW/f/dhcRdy75rlZizeZvTB3Ey7+u4InB8J7weiK1dvp2eboqe4L82PtU8efs19z592NnNwj+upZ+JFs8f2/H3/2nv3WMTWSw7tjfuo+zPIw0T95/D092/zUew2u66+03O7w2niDmoX4fXhHvmP3WvjnhN7Kv5a9+QR7Xn+amM6h+5zz2byz60L9VX9FZ7/63UNK1akq5/nb2e+f29iz969J+vZ1hzkz/WU8x3cbw+yD7F31xuI9e5HyCfIO0jbeIbz5yIvoEf3Zwzamx1HVz9Fdoxj2IzFOMR/irNTiP8eop3GYBz6eh/jQHvikVffmXGIqf7ET3FX28+42xeRr9DpX5q/r3k+c79PfPL357bm8GeWV/obfz4n2ved3yPGB4jHidaMTXzyZx6Vt9myf59Atz62teePrcnHY9zvGHICsf7Fp4rLAR/CmNwwhs1j4uyCL3OxC3fZtDv8A44pgcs=
   </data>
  </layer>
- <objectgroup id="11" name="ground" visible="0">
+ <objectgroup id="11" name="ground">
   <object id="19" x="0.03125" y="192" width="1103.97" height="16.0313"/>
   <object id="20" x="1135.98" y="192" width="240.016" height="15.9688"/>
   <object id="22" x="1424.01" y="191.989" width="1024" height="16"/>
   <object id="23" x="2480" y="191.996" width="1359.98" height="16.0039"/>
+  <object id="73" x="2144" y="176" width="64" height="16"/>
+  <object id="74" x="2160" y="160" width="48" height="16"/>
+  <object id="75" x="2176" y="144" width="32" height="16"/>
+  <object id="76" x="2192" y="128" width="16" height="16"/>
+  <object id="77" x="2240" y="144" width="32" height="48"/>
+  <object id="78" x="2240" y="128" width="16" height="16"/>
+  <object id="79" x="2272" y="160" width="16" height="32"/>
+  <object id="80" x="2288" y="176" width="16" height="16"/>
+  <object id="81" x="2400" y="144" width="48" height="48"/>
+  <object id="82" x="2416" y="128" width="32" height="16"/>
+  <object id="83" x="2384" y="160" width="16" height="32"/>
+  <object id="84" x="2368" y="176" width="16" height="16"/>
+  <object id="85" x="2480" y="144" width="32" height="48"/>
+  <object id="86" x="2480" y="128" width="16" height="16"/>
+  <object id="88" x="2512" y="160" width="16" height="32"/>
+  <object id="89" x="2528" y="176" width="16" height="16"/>
+  <object id="91" x="2960" y="112" width="80" height="80"/>
+  <object id="92" x="3008" y="80" width="32" height="32"/>
+  <object id="93" x="2992" y="80" width="16" height="32"/>
+  <object id="94" x="3008" y="64" width="32" height="16"/>
+  <object id="95" x="2976" y="96" width="16" height="16"/>
+  <object id="96" x="2928" y="144" width="32" height="48"/>
+  <object id="97" x="2944" y="128" width="16" height="16"/>
+  <object id="98" x="2896" y="176" width="32" height="16"/>
+  <object id="99" x="2912" y="160" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="5" name="pipes">
   <object id="10" x="2864.33" y="160.667" width="31" height="31.3333"/>
@@ -25,21 +50,74 @@
   <object id="14" x="623.75" y="144.125" width="32.25" height="47.625"/>
   <object id="24" x="3775.88" y="160.063" width="48.2159" height="31.9375"/>
   <object id="25" x="3808.18" y="144" width="31.7869" height="48.3636"/>
+  <object id="72" x="464" y="160" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="8" name="coins">
-  <object id="59" x="272" y="128" width="16" height="16"/>
-  <object id="60" x="368" y="64" width="16" height="16"/>
-  <object id="61" x="384" y="128" width="16" height="16"/>
-  <object id="62" x="352" y="128" width="16" height="16"/>
-  <object id="63" x="1248" y="128" width="15.913" height="15.9565"/>
-  <object id="64" x="1504" y="64" width="16" height="16"/>
-  <object id="65" x="1744" y="64" width="16" height="16"/>
-  <object id="66" x="1744" y="128" width="15" height="15.3333"/>
-  <object id="67" x="1792" y="128" width="16" height="16"/>
-  <object id="68" x="1696" y="128" width="16" height="16"/>
-  <object id="69" x="2064" y="64" width="16" height="16"/>
-  <object id="70" x="2080" y="64" width="16" height="16"/>
-  <object id="71" x="2720" y="128" width="16" height="16"/>
+  <object id="59" x="272" y="128" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="60" x="368" y="64" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="61" x="384" y="128" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="62" x="352" y="128" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="63" x="1248" y="128" width="15.913" height="15.9565">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="64" x="1504" y="64" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="65" x="1744" y="64" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="66" x="1744" y="128" width="15" height="15.3333">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="67" x="1792" y="128" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="68" x="1696" y="128" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="69" x="2064" y="64" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="70" x="2080" y="64" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
+  <object id="71" x="2720" y="128" width="16" height="16">
+   <properties>
+    <property name="mushroom" value=""/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="9" name="bricks">
   <object id="26" x="2735.96" y="128.043" width="16.0435" height="16.0435"/>
@@ -72,5 +150,17 @@
   <object id="55" x="400" y="128" width="16" height="16"/>
   <object id="57" x="368" y="128" width="16" height="16"/>
   <object id="58" x="336" y="128" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="12" name="Goombas">
+  <object id="100" x="512" y="176" width="16" height="16"/>
+  <object id="101" x="704" y="176" width="16" height="16"/>
+  <object id="103" x="848" y="176" width="16" height="16"/>
+  <object id="104" x="2720" y="176" width="16" height="16"/>
+  <object id="105" x="2320" y="176" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="13" name="Turtles">
+  <object id="107" x="400" y="176" width="16" height="16"/>
+  <object id="108" x="880" y="176" width="16" height="16"/>
+  <object id="109" x="2336" y="176" width="16" height="16"/>
  </objectgroup>
 </map>
